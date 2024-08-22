@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tree.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Add A Tree</title>
+  </head>
+  <body>
+    <nav>
+      <h3>My Trees</h3>
+    </nav>
+
+    <div class="imgInfo">
+      <div class="uploadImg">
+        <!-- Image will be displayed here -->
+        <img
+          id="treeImage"
+          src=""
+          alt="Selected Tree Image"
+          style="display: none; max-width: 100%; margin-bottom: 10px"
+        />
+
+        <!-- Hidden file input -->
+        <input
+          type="file"
+          id="fileInput"
+          accept="image/*"
+          style="display: none"
+        />
+
+        <!-- Button to trigger file selection -->
+        <button id="addTreeButton">Add a Tree</button>
+      </div>
+      <form action="">
+        <label for="tree">Tag Number</label>
+        <input type="number" name="tree" id="tree" />
+      </form>
+      <button>
+        <a href="../landRegistration/land.html">Save</a>
+        </button>
+    </div>
+
+    <script>
+      // Get the elements
+      const fileInput = document.getElementById("fileInput");
+      const treeImage = document.getElementById("treeImage");
+      const addTreeButton = document.getElementById("addTreeButton");
+
+      // Add click event to the button to trigger file input
+      addTreeButton.addEventListener("click", function () {
+        fileInput.click();
+      });
+
+      // When a file is selected, display the image above the button
+      fileInput.addEventListener("change", function (event) {
+        const file = event.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            treeImage.src = e.target.result;
+            treeImage.style.display = "block"; // Show the image
+          };
+          reader.readAsDataURL(file); // Read the file as a data URL
+        }
+      });
+    </script>
+  </body>
+</html>

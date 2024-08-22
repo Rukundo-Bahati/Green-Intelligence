@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background: #004200;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.land {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+#heading {
+  margin: 1rem;
+}
+
+.landLocation {
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 17%;
+  padding: 1rem;
+  background: rgb(172, 235, 172);
+}
+
+@media screen and (max-width: 760px) {
+  .landLocation {
+    width: 60%;
+  }
+}
+
+.landLocation i {
+  font-size: 2rem;
+  color: #fa2121;
+}
+
+.myLands {
+  background: #a0a0a061;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left i {
+  font-size: 2rem;
+}
+.right i {
+  font-size: 2rem;
+}
+
+.myLands i {
+  color: #0d6fd1;
+}
+
+.myLands a {
+  text-decoration: none;
+  color: #038203;
+}
+
+.middle {
+  margin: 4px 14px;
+}
+
+.uploadedLands {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

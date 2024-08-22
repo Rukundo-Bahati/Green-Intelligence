@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  /* gap: 2rem; */
+  background: #004200;
+  color: white;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  justify-content: space-between;
+}
+
+.trees {
+  background: #004200;
+  padding: 28px;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+.tree-img {
+  border: 2px solid white;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  margin-top: 1.2rem;
+}
+
+.uploaded-number {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.rewarded-and-received {
+  display: flex;
+  width: 100%;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+#paid-trees {
+  background: #0042008e;
+  flex-direction: column;
+  align-items: center;
+}
+
+#received-trees {
+  background: dodgerblue;
+}
+
+.my-trees{
+  background: #ddd;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  padding: 1.3rem;
+}
+
+.view-my-trees{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.my-trees i {
+  font-size: 3rem;
+}
+.download-icon {
+ height: 3rem;
+ width: 3rem;
+ font-size: 3rem;
+ border: 2px solid yellow;
+ background: #ffd500;
+ padding: 8px;
+ border-radius: 50%;
+}
+
+.money-icon{
+  font-size: 3rem;
+  border: 4px solid yellow;
+  background: #fff;
+  color: #ffee00;
+  padding: 8px;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}

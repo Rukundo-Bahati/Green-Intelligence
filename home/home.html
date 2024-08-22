@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <nav>
+      <div></div>
+      <h3>Home</h3>
+      <i class="bx bxs-bell"></i>
+    </nav>
+
+    <div id="uploaded-trees" class="trees">
+      <div class="left">
+        <p>No. of uploaded trees</p>
+        <div class="uploaded-number">
+          <img
+            src="../images/tree-1716991_1280-removebg-preview.png"
+            alt=""
+            class="tree-img"
+          />
+          <p>1 trees</p>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+    <!-- trees to be paid  -->
+    <div id="paid-trees" class="trees">
+      <div class="left">
+        <p>Trees yet to be paid</p>
+        <div class="uploaded-number">
+          <i class="bx bx-money-withdraw money-icon"></i>
+          <p>0 trees</p>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+    <!-- rewarded-and-received -->
+    <div class="rewarded-and-received">
+      <div id="rewarded-trees" class="trees">
+        <p>Rewarded trees</p>
+        <div class="rewarded-number">
+          <img
+            src="../images/tree-1716991_1280-removebg-preview.png"
+            alt=""
+            class="tree-img"
+          />
+          <p>0 trees</p>
+        </div>
+      </div>
+
+      <div id="received-trees" class="trees">
+        <i class="bx bxs-download download-icon"></i>
+        <div class="rewarded-number">
+          <p>Received</p>
+          <p>0 rupees</p>
+        </div>
+      </div>
+    </div>
+    <!-- my trees -->
+    <div class="my-trees">
+      <div class="view-my-trees">
+        <i class="bx bxs-notepad"></i>
+        <a
+          href="../viewTrees/viewTree.html"
+          style="text-decoration: none; color: black"
+          >View My Trees</a
+        >
+      </div>
+      <i class="bx bx-chevron-right"></i>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  width: 60%;
+}
+
+nav i {
+  font-size: 2rem;
+}
+
+nav i:first-child {
+  color: green;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+  width: 100%;
+  margin: 1rem;
+}
+
+.search i {
+  color: dodgerblue;
+}
+.search input {
+  background: transparent;
+  border: 0;
+  margin-left: 12px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.videos {
+  display: flex;
+  align-items: center;
+  background: rgba(154, 249, 154, 0.74);
+  border-radius: 8px;
+  width: 60%;
+}
+
+.videos img {
+  width: 80%;
+}
+
+.vid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vid video {
+  width: 70%;
+  margin: 1rem;
+  border: 1px solid #4355;
+  border-radius: 7px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.videostxt {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  justify-content: space-between;
+  width: 60%;
+  font-size: 1.6rem;
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 60%;
+}
+
+.connect video {
+  width: 40%;
+  border: 1px solid #4355;
+  border-radius: 7px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 60%;
+}
+
+.categoryImages {
+  display: flex;
+}
+.categoryImages img {
+  width: 30%;
+  border: 1px solid green;
+  background: rgb(0, 37, 0);
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 760px) {
+  .connect {
+    width: 80%;
+  }
+  nav {
+    width: 80%;
+  }
+  .videos {
+    width: 80%;
+  }
+  .vid video {
+    width: 90%;
+  }
+}

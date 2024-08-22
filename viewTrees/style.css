@@ -1,0 +1,39 @@
+nav {
+  background: #004200;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+nav a:first-child {
+  margin-left: 1.2rem;
+}
+
+nav a:last-child {
+  margin-right: 1.2rem;
+}
+
+.tree {
+  display: flex;
+  align-items: center;
+  background: #c1c1c191;
+}
+
+.trees {
+  gap: 17px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 760px) {
+  .tree {
+    flex-direction: column;
+  }
+}

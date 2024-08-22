@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="register.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="../images/MYLOGO.png" alt="" id="logo-img" />
+        <h3><sup>THE</sup> GREEN <span>INTELLIGENCE</span></h3>
+      </div>
+    </nav>
+
+    <div class="language">
+      <div class="lang-class"></div>
+      <div class="languages">
+        <i class="bx bx-globe"></i>
+        <select name="lang" id="lang">
+          <option value="1">English</option>
+          <option value="2">French</option>
+          <option value="3">Portugeuse</option>
+          <option value="4">Spanish</option>
+        </select>
+        <label for="lang">
+          <i class="bx bx-chevron-down"></i>
+        </label>
+      </div>
+    </div>
+    <div class="body-content">
+      <form action="">
+        <h3 id="login">Register</h3>
+        <div class="phone input">
+          <label for="phone">Phone number</label>
+          <input type="text" name="phone" id="phone" />
+        </div>
+        <div class="password input">
+          <label for="password">Password</label>
+          <div class="tel-field">
+            <input type="text" name="password" id="password" />
+            <i class="bx bx-low-vision eye"> </i>
+          </div>
+        </div>
+
+        <div class="password input">
+          <label for="email">Email</label>
+          <div class="tel-field">
+            <input type="text" name="email" id="email" />
+            <i class="bx bx-envelope eye"> </i>
+          </div>
+        </div>
+
+        <div class="forgot-password">
+          <div class="check">
+            <input type="checkbox" name="" id="checkbox" />
+            <p>Remember me</p>
+          </div>
+          <a href="#" id="pwd">Forgot Password?</a>
+        </div>
+        <div class="btns">
+          <button type="submit" class="login-btn">
+            <a href="../home/home.html">Register</a>
+          </button>
+          <button type="submit" class="login-btn">
+            <a href="../login/login.html">Login</a>
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

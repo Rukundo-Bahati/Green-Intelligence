@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #004200;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav h3 {
+  text-align: center;
+}
+
+#phoneImg {
+  width: 18rem;
+  margin: 3rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+button {
+  background: #004200;
+  padding: 0.4rem;
+  color: #fff;
+  gap: 8px;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  margin: 0.5rem;
+}
+
+p {
+  color: gray;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form input {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #bbb;
+  background: #d3d1d1b0;
+}
+form input:focus {
+  outline: none;
+}
+
+.uploadImg {
+  border: 1px solid #bbb;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#addTreeButton {
+  cursor: pointer;
+}
